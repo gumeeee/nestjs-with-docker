@@ -1,0 +1,25 @@
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Titulo do meu item teste",
+    "description": "Apenas um item de teste para ser testado!"
+}
+
+###
+GET http://localhost:3000/items
+
+###
+GET http://localhost:3000/items/1
+
+###
+PATCH http://localhost:3000/items/0.6632658386912107
+Content-Type: application/json
+
+{
+    "title": "Titulo do meu item teste",
+    "description": "Teste realizado de troca do titulo"
+}
+
+###
+DELETE http://localhost:3000/items/0.6632658386912107
